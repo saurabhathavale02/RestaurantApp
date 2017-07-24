@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/white"
+    android:padding="5dp"
+    >
+
+    <ImageButton
+        android:id="@+id/Delete"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.10"
+        android:background="@color/transparent"
+        android:gravity="center"
+        app:srcCompat="@mipmap/delete" />
+
+    <TextView
+        android:id="@+id/selected_food_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.60"
+        android:text="TextView"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceButton"
+        />
+
+    <TextView
+        android:id="@+id/selected_quantity"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.10"
+        android:background="@color/white"
+        android:text="2"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceButton"
+        />
+
+    <TextView
+        android:id="@+id/selected_cost"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.20"
+        android:background="@color/white"
+        android:text="TextView"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceButton"
+        />
+
+</LinearLayout>

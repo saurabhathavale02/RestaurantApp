@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header"
+        android:id="@+id/include" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/include"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/restaurant_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/food_burger"
+                android:layout_alignBottom="@+id/rating"
+                android:layout_alignParentTop="true" />
+
+
+            <EditText
+                android:id="@+id/rating"
+                android:layout_width="45sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="267dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:text="4.8"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:background="@color/green"
+                android:padding="5sp"
+                android:enabled="false"
+                android:layout_centerHorizontal="true"
+                />
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/restaurant_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thai Cusisine"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:padding="3dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/food_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="American ($$$)"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:padding="4sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:id="@+id/hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Hours Today:6.00 am to 7.00 pm"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:padding="4sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/dark_red"
+            />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/call"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    app:srcCompat="@mipmap/call"
+                    android:background="@color/transparent"
+                    />
+
+                <ImageButton
+                    android:id="@+id/menu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    app:srcCompat="@mipmap/menu"
+                    android:background="@color/transparent"
+                    />
+
+                <ImageButton
+                    android:id="@+id/locate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    app:srcCompat="@mipmap/locate"
+                    android:background="@color/transparent"
+                    />
+
+                <ImageButton
+                    android:id="@+id/website"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    app:srcCompat="@mipmap/website"
+                    android:background="@color/transparent"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

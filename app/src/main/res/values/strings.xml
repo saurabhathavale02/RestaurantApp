@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RestaurantDairy</string>
+    <string name="google_maps_key">AIzaSyAmTQURxfUtPosrdZRuivuVC_I5VnXAqzg</string>
+    <string name="moto">Find Restaurants near you</string>
+    <string name="copyright">CopyRight 2017</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="profile">Profile</string>
+    <string name="setting">Setting</string>
+    <string name="login">Login</string>
+    <string name="offers">Offers</string>
+    <string name="button_add">Add</string>
+    <string name="menu">Menu</string>
+    <string name="addcart">Add To Cart</string>
+    <string name="showcart">Show Cart</string>
+</resources>

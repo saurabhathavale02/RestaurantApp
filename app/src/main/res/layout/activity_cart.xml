@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.saurabh.restaurantdairy.CartDisplay.CartActivity">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/selectedrecycleview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.45" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.45">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+                    <RadioGroup
+                        android:id="@+id/radiogroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/carryout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.80"
+                            android:gravity="center_vertical"
+                            android:text="Carry Out"
+                            android:checked="true"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/delivery"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.20"
+                            android:gravity="center_vertical"
+                            android:text="Delivery" />
+
+
+                    </RadioGroup>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Address to Deliver"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/Stotal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.80"
+                        android:text="SubTotal"
+                        android:padding="5dp"
+                        android:layout_gravity="center_horizontal|left"
+                        android:textAppearance="?android:attr/textAppearanceButton"
+                        />
+
+                    <TextView
+                        android:id="@+id/SubTotal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|left"
+                        android:textAppearance="?android:attr/textAppearanceButton"
+                        android:layout_weight="0.20"
+                        android:padding="5dp"
+                        android:text="$13.45" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/Tax"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|left"
+                        android:textAppearance="?android:attr/textAppearanceButton"
+                        android:layout_weight="0.80"
+                        android:padding="5dp"
+                        android:text="Service Tax" />
+
+                    <TextView
+                        android:id="@+id/ServiceTax"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|left"
+                        android:textAppearance="?android:attr/textAppearanceButton"
+                        android:layout_weight="0.20"
+                        android:padding="5dp"
+                        android:text="$2.30" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/TFinal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|left"
+                        android:textAppearance="?android:attr/textAppearanceButton"
+                        android:layout_weight="0.80"
+                        android:padding="5dp"
+                        android:textColor="@color/dark_red"
+                        android:text="Total" />
+
+                    <TextView
+                        android:id="@+id/TotalPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|left"
+                        android:textAppearance="?android:attr/textAppearanceButton"
+                        android:layout_weight="0.20"
+                        android:padding="5dp"
+                        android:textColor="@color/dark_red"
+                        android:text="$15.30" />
+
+                </TableRow>
+            </TableLayout>
+
+
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.10">
+
+            <Button
+                android:id="@+id/Pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Pay - $15.50"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/roundedbutton"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

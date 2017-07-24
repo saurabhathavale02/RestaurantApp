@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.saurabh.restaurantdairy.AddToCart.AddToCartActivity">
+
+    <include layout="@layout/header"
+        android:id="@+id/include" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/FoodImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:srcCompat="@mipmap/food_image"
+            android:background="@color/white"
+            android:layout_weight="0.42"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.50"
+            android:orientation="vertical"
+            android:padding="5dp"
+            >
+
+            <FrameLayout
+                android:id="@+id/FoodName_Frame"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="0.10"
+                android:paddingTop="5dp"
+                android:background="@color/divider_line"
+                android:padding="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Food_Name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_weight="80"
+                        android:textAppearance="?android:attr/textAppearanceButton"
+                        android:paddingRight="5dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/Price"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:layout_gravity="center"
+                        android:layout_weight="20"
+                        android:textAppearance="?android:attr/textAppearanceButton"
+                        android:paddingRight="5dp"
+
+                        />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/Fooddesc_Frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.10"
+                    android:background="@color/divider_line"
+                    android:padding="5dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Food_Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:gravity="center_vertical|left"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/Quantity_Frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.20"
+                    android:background="@color/primary_text"
+                    android:padding="5dp"
+                >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/Quantity"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Quantity"
+                            android:layout_gravity="center_horizontal|left"
+                            android:textAppearance="?android:attr/textAppearanceButton"
+                            android:layout_marginTop="2dp"
+
+
+                            />
+
+
+                        <Button
+                            android:id="@+id/Sub"
+                            android:layout_width="75sp"
+                            android:layout_height="50sp"
+                            android:text="-"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toLeftOf="@+id/Add"
+                            android:layout_toStartOf="@+id/Add"
+                            android:background="@drawable/roundedbutton"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="3dp"
+                            android:textAppearance="?android:attr/textAppearanceButton"
+                            />
+
+
+                        <Button
+                            android:id="@+id/Add"
+                            android:layout_width="75sp"
+                            android:layout_height="50sp"
+                            android:text="+"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/roundedbutton"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="5dp"
+                            android:textAppearance="?android:attr/textAppearanceButton"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/Quantity_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:gravity="center_vertical|left"
+                            android:text="TextView"
+                            android:paddingLeft="20dp"
+                            android:layout_alignTop="@+id/Sub"
+                            android:layout_toLeftOf="@+id/Sub"
+                            android:layout_toStartOf="@+id/Sub"
+                            android:textAppearance="?android:attr/textAppearanceButton"
+
+                            />
+
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/AddCart_Frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.20"
+                    android:background="@color/divider_line"
+                >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/addcart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/addcart"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:background="@drawable/roundedbutton"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            />
+
+                    </RelativeLayout>
+                </FrameLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

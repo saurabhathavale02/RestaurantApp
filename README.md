@@ -11,14 +11,14 @@ Purchase using  Card or through PayPal Account directly.
 
 ## ScrrenShot
 <img src="im1.png" width="250">
-<img src="im2.png" width="250">
-<img src="im3.png" width="250"> <br>
 <img src="im4.png" width="250">
 <img src="im5.png" width="250">
-<img src="im6.png" width="250"><br>
+<img src="im2.png" width="250">
+<img src="im3.png" width="250">
+<img src="im6.png" width="250">
 <img src="im7.png" width="250">
 <img src="im8.png" width="250">
-<img src="im9.png" width="250"><br>
+<img src="im9.png" width="250">
 <img src="im10.png" width="250">
 <img src="im11.png" width="250">
 <img src="im12.png" width="250">

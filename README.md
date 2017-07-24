@@ -10,7 +10,7 @@ Purchase using  Card or through PayPal Account directly.
 #https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf <br>
 
 ##Screenshot
-![alt text](im1.png =50x20)
+![](im1.png)
 
 ## License
 
